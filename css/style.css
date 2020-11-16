@@ -24,6 +24,18 @@ body {
 
 .header-logo {
   width: 11.5vw;
+	height: 2.6vw;
+ background-image: url("svg/noemi-logo.svg");
+	background-size: cover;
+	
+}
+
+.header-logo-text {
+	content: ""; 
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
 }
 
 .welcome {
@@ -151,6 +163,7 @@ body {
   font-size: 40px;
   color: #ffffff;  
    text-transform: uppercase; 
+	
 }
 
 .title-logo {
@@ -202,6 +215,8 @@ body {
 	display: block;
 	flex-basis: 24%;
 	width: 20%;
+	max-width: 375px;
+	min-width: 300px;
 }
 
 .trend:nth-child(n+2) {
@@ -271,6 +286,7 @@ article {
 
 .post-picture{
   width: 95%;
+  min-width: 300px;
 }
 
 .post-tag {
@@ -415,27 +431,40 @@ h3 {
   margin-top: 60px;
   height: 48px;
   display: flex;
-
+	justify-content: space-between;
+	
 }
 
 .field-search {
+ 
   box-sizing: border-box;
-  width: 100%;
+  width: 171%;
+
+	
   height: 48px;
-  padding: 10px 25px 10px 15px;
+  padding-left: 15px;
   border: none;
   background-color: #f4f7f6;
 }
 
+.search-text {
+	content: ""; 
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
 .search-button {
+	display: block;
    background-image: url("svg/search.svg");
    background-repeat: no-repeat;
    background-size: 19px 19px;
    background-position: center center;
    width: 20%;
+	height: 48px;
    border: none;
    background-color: #b59f5b;
-   
 }
 
 .search-button:hover {
@@ -455,7 +484,7 @@ h3 {
 }
 
 .field-subscribe {
-  width: 93%;
+  width: 95%;
   height: 48px;
   padding-left: 15px;
   border: none;
@@ -784,6 +813,9 @@ background-color: #7B631F;
 	background-size: 10px;
 	background-position: center right 5px;
 	color: #969292;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+     appearance: none;
 }
 
 .textarea {
@@ -892,6 +924,10 @@ width: 1px;
 		display: none;
 	}
 	
+	.welcome-title {
+		min-width: 450px;
+	}
+	
 	.nav-toggle {
 		display: inline-block;
 	}
@@ -902,6 +938,14 @@ width: 1px;
 	
 	.post {
 		display: block;
+	}
+	
+	.post-name {
+		margin-bottom: 10px;
+	}
+	
+	.post-text {
+		margin-top: 10px;
 	}
 	
 	.trend:nth-child(n+2) {
@@ -940,7 +984,7 @@ width: 1px;
 	}
 	
 	.welcome-title {
-		font-size: 30px;
+		font-size: 40px;
 	}
 	
 }
@@ -948,6 +992,12 @@ width: 1px;
 @media (max-width: 640px) and (orientation: portrait)  {
 	.menu-list {
 		display: none;
+	}
+	
+	.title-logo {
+		max-width: 450px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	
 	.nav-toggle {
@@ -976,6 +1026,10 @@ width: 1px;
 	.last-post {
 		padding: 0;
 	}
+	
+	.search {
+  justify-content: center;
+}
 
 	.sidebar {
 		justify-content: center;
@@ -1002,9 +1056,12 @@ width: 1px;
 		width: 96%;
 	}
 	
+/*
 	.field-search {
 		width: 150%;
+		flex-grow: 1;
 	}
+*/
 	
 	.copyrights {
 		margin-top: 30px;
@@ -1061,6 +1118,12 @@ width: 1px;
 		display: none;
 	}
 	
+	.title-logo {
+		max-width: 450px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
 	.post-description {
    
     margin-left: 0;
@@ -1092,6 +1155,10 @@ width: 1px;
 	.trend_title {
 	font-size: 14px;
 	}
+	
+		.search {
+  justify-content: center;
+}
 	
 	.trend:nth-child(2n+2) {
 	    margin-left: 5px;	
@@ -1136,9 +1203,11 @@ width: 1px;
 		width: 96%;
 	}
 	
+/*
 	.field-search {
 		width: 150%;
 	}
+*/
 	
 	.copyrights {
 		margin-top: 30px;
