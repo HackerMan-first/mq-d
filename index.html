@@ -10,7 +10,7 @@
 <body>
 	<header class="welcome">
   <div class="nav-container">
-    <img src="css/svg/noemi-logo.svg" class="header-logo" alt>
+  <a class="header-logo" href="#0"><span class="header-logo-text">Лого</span></a> <!--  <img src="css/svg/noemi-logo.svg" class="header-logo" alt>-->
     <nav class="menu">
       <ul class="menu-list">
         <li class="menu-list-item">
@@ -273,7 +273,7 @@
     <label class="search-group">
         <input class="field-search" name="query" placeholder="Найти..." alt="Поле для поиска" required>
     </label>
-     <button class="search-button"></button>
+     <button class="search-button"><span class="search-text">Поиск</span></button>
   </form>
   </section>
   
@@ -287,6 +287,9 @@
     <label class="subscribe-group">
      
      <input type="email" class="field-subscribe" placeholder="Ваш email-адрес" alt="Поле для email" required>
+		
+   <input type="hidden" name="name" value="Vasya">
+   <input type="hidden" name="password" value="1234">
     </label>
     <button class="subscribe-button">Подписаться</button>
   </form>
@@ -314,27 +317,27 @@
     
     <div class="theme-group">
       <a href="#0" class="theme">Красота</a> 
-       <sup class="sup-text">12</sup>
+       <span class="sup-text">12</span>
     </div>
    <div class="theme-group"> 
      <a href="#0" class="theme">Здоровье</a>
-      <sup class="sup-text">4</sup>
+      <span class="sup-text">4</span>
     </div>
     <div class="theme-group">
       <a href="#0" class="theme">Образ жизни</a> 
-       <sup class="sup-text">145</sup>
+       <span class="sup-text">145</span>
     </div>
     <div class="theme-group">
       <a href="#0" class="theme">Музыка</a>
-       <sup class="sup-text">28</sup>
+       <span class="sup-text">28</span>
     </div>
     <div class="theme-group">
       <a href="#0" class="theme">Спорт</a> 
-       <sup class="sup-text">62</sup>
+       <span class="sup-text">62</span>
     </div>
    <div class="theme-group"> 
      <a href="#0" class="theme">Йога</a> 
-    <sup class="sup-text">8</sup>
+    <span class="sup-text">8</span>
     </div>
   </section>
 </aside>
