@@ -65,20 +65,15 @@ body {
 
 .nav-container {
   display: flex;
-  flex-wrap: wrap;
-  
-  
+  flex-wrap: wrap;  
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-
-  justify-content: space-around;
-  align-items: flex-start;
-  
+  justify-content: space-between;
   position: relative;
   z-index: 1;
-	max-width: 1800px;
+  max-width: 1200px;
 }
 
 .menu-list {
@@ -95,8 +90,7 @@ body {
    text-transform: uppercase;
  }
 
-.menu-list-item:nth-child(n+2) {
-  
+.menu-list-item:nth-child(n+2) {  
   margin-left: 35px;
 }
 
@@ -119,9 +113,7 @@ body {
 	display: block;
     width: 100%;
     height: 3px;
-
     background-color: #fff;
-
     position: absolute;
     top: 0;
     right: 0;
@@ -219,8 +211,8 @@ body {
 	display: block;
 	flex-basis: 24%;
 	width: 20%;
-	max-width: 375px;
-	min-width: 300px;
+	max-width: 400px;
+	min-width: 275px;
 }
 
 .trend:nth-child(n+2) {
@@ -351,6 +343,7 @@ article {
 .sidebar {
 text-align: center;
   width: 15%;
+	min-width: 200px;
 	position: relative;
 
 }
@@ -561,7 +554,7 @@ h3 {
   
 }
 
-.sup-text {
+.span-text {
 
   font-size: 12px;
   font-weight: bold;
@@ -932,6 +925,10 @@ width: 1px;
 		display: none;
 	}
 	
+	.sidebar {
+		min-width: 200px;
+	}
+	
 	.welcome-title {
 		min-width: 450px;
 	}
@@ -940,8 +937,9 @@ width: 1px;
 		display: inline-block;
 	}
 	.trend {
-		flex-basis: 49.5%;
+		flex-basis: 50%;
 		margin: 5px 0;
+		
 	}
 	
 	.post {
@@ -998,6 +996,12 @@ width: 1px;
 }
 
 @media (max-width: 640px) and (orientation: portrait)  {
+	
+	body {
+		padding: 0;
+		margin: 0;
+	}
+	
 	.menu-list {
 		display: none;
 	}
@@ -1012,9 +1016,15 @@ width: 1px;
 		display: inline-block;
 	}	
 	
+	.trends {
+	margin-left: 0;
+		margin-right: 0;	
+	}
+	
 		.trend {
 		flex-basis: 90%;
 		margin: 5px 0;
+		min-width: 150px;
 	}
 	
 	.trend:nth-child(n+2) {
@@ -1024,7 +1034,10 @@ width: 1px;
 	.post-and-sidebar {
 		display: block;
 		justify-content: center;
-		padding-left: 10px; 
+		padding-left: 0;
+		padding-right: 0;	
+		margin-left: 0;
+		margin-right: 0;
 	}
 	
 	.post{
@@ -1036,16 +1049,16 @@ width: 1px;
 	}
 	
 	.search {
-  justify-content: center;
+    justify-content: center;
 }
 
 	.sidebar {
 		justify-content: center;
-		margin-left: 10px;
-		margin-right: 10px;
+/*		margin-left: 10px;*/
+/*		margin-right: 10px;*/
 		width: 100%;
-		padding-left: 10px;
-		padding-right: 10px;
+/*		padding-left: 10px;*/
+/*		padding-right: 10px;*/
 	}
 
 	.sidebar-post {
@@ -1053,7 +1066,7 @@ width: 1px;
 	}
 	
 	.sidebar-title::after {
-		left: 45%;
+		left: 4%;
 	}
 	
 	.socials-group {
