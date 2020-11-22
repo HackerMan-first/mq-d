@@ -554,7 +554,7 @@ h3 {
   
 }
 
-.span-text {
+.tag-num {
 
   font-size: 12px;
   font-weight: bold;
@@ -1031,6 +1031,14 @@ width: 1px;
 	    margin-left: 0;	
 	}
 	
+	.trend-name {
+		max-height: 200px;
+	}
+	
+	.trend_title {
+		max-height: 140px
+	}
+	
 	.post-and-sidebar {
 		display: block;
 		justify-content: center;
@@ -1128,6 +1136,10 @@ width: 1px;
 	
 	.post-name {
 		margin-bottom: 10px;
+	}
+	
+	html {
+		width: 100%;
 	}
 	
 	
