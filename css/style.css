@@ -925,6 +925,10 @@ width: 1px;
 		display: none;
 	}
 	
+	.welcome {
+		background-image: url("img/banner-bg-tablet.jpg")
+	}
+	
 	.sidebar {
 		min-width: 200px;
 	}
@@ -1003,6 +1007,10 @@ width: 1px;
 		max-width: 100%;
 	}
 	
+	.welcome {
+		background-image: url("img/banner-mobile.jpg");
+	}
+	
 	.last-post {
 		box-sizing: border-box;
 		max-width: 96%;
@@ -1025,10 +1033,7 @@ width: 1px;
 		margin: 0;
 	}
 	
-	.nav-container {
-	
-	}
-	
+		
 	.sidebar-title::after {
 		display: none;
 	}
@@ -1229,6 +1234,8 @@ width: 1px;
 	.menu-list {
 		display: none;
 	}
+	
+	
 	
 	.title-logo {
 		max-width: 450px;
