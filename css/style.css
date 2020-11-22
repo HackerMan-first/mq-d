@@ -1003,8 +1003,10 @@ width: 1px;
 		max-width: 100%;
 	}
 	
-		html {
-		width: 100%;
+	.last-post {
+		box-sizing: border-box;
+		max-width: 96%;
+		
 	}
 	
 	._hidden {
