@@ -1003,6 +1003,8 @@ width: 1px;
 	
 	.social-link {
 		width: 10px;
+		height: 10px;
+		background-size: cover;
 	}
 
 	.welcome {
@@ -1176,12 +1178,13 @@ width: 1px;
 	.products {
 		width: 90%;
 		margin: 0;
-		justify-content: flex-start;
+		justify-content: center;
 	}
 	
 	.our_products {
 		width: 95%;
 		margin: 0;
+		justify-content: center;
 	}
 
 	
