@@ -946,6 +946,15 @@ width: 1px;
 		
 	}
 	
+	.subscribe {
+		box-sizing: border-box;
+		max-width: 200px;
+	}
+	
+	.field-subscribe {
+		max-width: 200px;
+	}
+	
 	.post {
 		display: block;
 	}
@@ -971,7 +980,7 @@ width: 1px;
 	}
 	
 	.products {
-		justify-content: flex-start;
+		justify-content: space-between;
 		
 	}
 	
@@ -980,9 +989,11 @@ width: 1px;
 		
 	}
 	
+
 	.product:nth-child(2n+1) {
 		margin-left: 10%;
 	}
+
 	
 	.product:nth-child(2n+2) {
 		margin-right: 10%;
@@ -1009,13 +1020,18 @@ width: 1px;
 
 	.welcome {
 		background-image: url("img/banner-mobile.jpg");
-		
-}
+	}
 	
 	.last-post {
 		box-sizing: border-box;
 		max-width: 96%;
+		margin-left: auto;
+		margin-right: auto;
 		
+	}
+	
+	.sidebar {
+/*		justify-content: center;*/
 	}
 	
 	._hidden {
@@ -1067,8 +1083,8 @@ width: 1px;
 	}
 	
 	.theme-group {
-		box-sizing: border-box;
-		max-width: 300px;
+		
+		
 		 
 	}
 	
@@ -1130,13 +1146,16 @@ width: 1px;
 	.last-post {
 		box-sizing: border-box;
 		padding: 5px;
-		margin: 0;
+		
 		max-width: 95%;
 	
 	}
 	
 	.search {
     justify-content: center;
+		max-width: 300px;
+		margin-left: auto;
+		margin-right: auto;
 }
 
 	.sidebar {
@@ -1147,6 +1166,8 @@ width: 1px;
 
 	.sidebar-post {
 		justify-content: center;
+		padding-left: auto;
+		padding-right: auto;
 	}
 	
 	.sidebar-title::after {
@@ -1157,8 +1178,19 @@ width: 1px;
 		width: 100%;
 	}
 	
+	.subscribe {
+		justify-content: center;
+		display: block;
+		max-width: 300px;
+		margin-left: auto;
+		margin-right: auto;
+		
+	}
+	
 	.subscribe-button {
 		width: 96%;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	
 	.socials-group {
@@ -1176,14 +1208,18 @@ width: 1px;
 	}
 	
 	.products {
+/*
 		width: 90%;
 		margin: 0;
+*/
 		justify-content: center;
 	}
 	
 	.our_products {
+/*
 		width: 95%;
 		margin: 0;
+*/
 		justify-content: center;
 	}
 
@@ -1226,7 +1262,11 @@ width: 1px;
 		margin-bottom: 10px;
 	}
 	
-
+	.Latest-posts {
+		justify-content: center;
+	}
+	
+    
 
 
 	
