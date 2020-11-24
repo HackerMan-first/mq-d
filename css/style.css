@@ -1059,6 +1059,7 @@ width: 1px;
 	.field-subscribe {
 		box-sizing: border-box;
 		max-width: 300px;
+		width: 100%;
 	}
 	
 	.subscribe-button {
@@ -1075,6 +1076,8 @@ width: 1px;
 	
 	.tag-group {
 		max-width: 300px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	
 	
@@ -1082,12 +1085,7 @@ width: 1px;
 		max-width: 220px;
 	}
 	
-	.theme-group {
 		
-		
-		 
-	}
-	
 	.menu-list {
 		display: none;
 	}
@@ -1112,7 +1110,7 @@ width: 1px;
 		margin-right: 0;	
 	}
 	
-		.trend {
+	.trend {
 		flex-basis: 95%;
 		margin: 2px 0;
 		min-width: 150px;
@@ -1152,7 +1150,7 @@ width: 1px;
 	}
 	
 	.search {
-    justify-content: center;
+    justify-content: space-between;
 		max-width: 300px;
 		margin-left: auto;
 		margin-right: auto;
@@ -1187,8 +1185,10 @@ width: 1px;
 		
 	}
 	
+	
+	
 	.subscribe-button {
-		width: 96%;
+		width: 100%;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -1359,7 +1359,7 @@ width: 1px;
 	}
 	
 		.search {
-  justify-content: center;
+  
 }
 	
 	.trend:nth-child(2n+2) {
@@ -1405,11 +1405,11 @@ width: 1px;
 		width: 96%;
 	}
 	
-/*
+	
 	.field-search {
-		width: 150%;
+		width: 130%;
 	}
-*/
+
 	
 	.copyrights {
 		margin-top: 30px;
